@@ -1,0 +1,60 @@
+name: MMBC Battery Controller
+version: "0.3.0"
+slug: mmbc
+description: Multiple Marstek Battery Controller for Home Assistant
+startup: services
+boot: auto
+image: "ghcr.io/vmangelschots/mmbc:0.3.0"
+options:
+  P1_HOST: ""
+  BATTERY_1_IP: ""
+  BATTERY_1_ADDRESS: 1
+  BATTERY_1_PORT: 502
+
+  BATTERY_2_IP: ""
+  BATTERY_2_ADDRESS: 1
+  BATTERY_2_PORT: 502
+
+  MQTT_HOST: "localhost"
+  MQTT_PORT: 1883
+  MQTT_TOPIC_PREFIX: "mmbc/virtual"
+  MQTT_HA_DISCOVERY: true
+  MQTT_USERNAME: ""
+  MQTT_PASSWORD: ""
+
+  INTERVAL_SECONDS: 3
+
+schema:
+  P1_HOST: str
+  BATTERY_1_IP: str
+  BATTERY_1_ADDRESS: int
+  BATTERY_1_PORT: int
+  BATTERY_2_IP: str?
+  BATTERY_2_ADDRESS: int?
+  BATTERY_2_PORT: int?
+  MQTT_HOST: str
+  MQTT_PORT: int
+  MQTT_TOPIC_PREFIX: str
+  MQTT_HA_DISCOVERY: bool
+  MQTT_USERNAME: str?
+  MQTT_PASSWORD: str?
+  INTERVAL_SECONDS: int
+
+environment:
+  P1_HOST: "$P1_HOST"
+  BATTERY_1_IP: "$BATTERY_1_IP"
+  BATTERY_1_ADDRESS: "$BATTERY_1_ADDRESS"
+  BATTERY_1_PORT: "$BATTERY_1_PORT"
+
+  BATTERY_2_IP: "$BATTERY_2_IP"
+  BATTERY_2_ADDRESS: "$BATTERY_2_ADDRESS"
+  BATTERY_2_PORT: "$BATTERY_2_PORT"
+
+  MQTT_HOST: "$MQTT_HOST"
+  MQTT_PORT: "$MQTT_PORT"
+  MQTT_TOPIC_PREFIX: "$MQTT_TOPIC_PREFIX"
+  MQTT_HA_DISCOVERY: "$MQTT_HA_DISCOVERY"
+  MQTT_USERNAME: "$MQTT_USERNAME"
+  MQTT_PASSWORD: "$MQTT_PASSWORD"
+
+  INTERVAL_SECONDS: "$INTERVAL_SECONDS"
