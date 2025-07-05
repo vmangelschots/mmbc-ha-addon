@@ -1,3 +1,9 @@
 name: MMBC Add-ons
 url: https://github.com/vmangelschots/mmbc-ha-addon
 maintainer: Vincent Mangelschots <vincent@mangelschots.org>
+addons:
+  - slug: mmbc
+    name: Multiple Marstek Battery Controller
+    version: "0.3.0"
+    description: Multiple Marstek Battery Controller for Home Assistant
+    url: https://github.com/vmangelschots/mmbc-ha-addon/tree/main/mmbc
