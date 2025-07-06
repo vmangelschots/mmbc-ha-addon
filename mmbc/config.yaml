@@ -5,6 +5,8 @@ description: Multiple Marstek Battery Controller for Home Assistant
 startup: services
 boot: auto
 image: "ghcr.io/vmangelschots/mmbc"
+arch: 
+  - amd64
 host_network: true
 privileged: []
 options: {}
