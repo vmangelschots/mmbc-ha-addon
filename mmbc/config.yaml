@@ -4,7 +4,7 @@ slug: mmbc
 description: Multiple Marstek Battery Controller for Home Assistant
 startup: services
 boot: auto
-image: "ghcr.io/vmangelschots/mmbc:0.3.0"
+image: "vmangelschots/mmbc:0.3.0"
 host_network: true
 privileged: []
 options: {}
