@@ -1,12 +1,13 @@
 name: MMBC Battery Controller
-version: "0.3.0"
+version: "0.3.1"
 slug: mmbc
 description: Multiple Marstek Battery Controller for Home Assistant
 startup: services
 boot: auto
 image: "ghcr.io/vmangelschots/mmbc"
-arch: 
+arch:
   - amd64
+  - armv7
 host_network: true
 privileged: []
 options:
@@ -43,22 +44,3 @@ schema:
   MQTT_USERNAME: str?
   MQTT_PASSWORD: str?
   INTERVAL_SECONDS: int
-
-environment:
-  P1_HOST: {P1_HOST}
-  BATTERY_1_IP: {BATTERY_1_IP}
-  BATTERY_1_ADDRESS: {BATTERY_1_ADDRESS}
-  BATTERY_1_PORT: {BATTERY_1_PORT}
-
-  BATTERY_2_IP: {BATTERY_2_IP}
-  BATTERY_2_ADDRESS: {BATTERY_2_ADDRESS}
-  BATTERY_2_PORT: {BATTERY_2_PORT}
-
-  MQTT_HOST: {MQTT_HOST}
-  MQTT_PORT: {MQTT_PORT}
-  MQTT_TOPIC_PREFIX: {MQTT_TOPIC_PREFIX}
-  MQTT_HA_DISCOVERY: {MQTT_HA_DISCOVERY}
-  MQTT_USERNAME: {MQTT_USERNAME}
-  MQTT_PASSWORD: {MQTT_PASSWORD}
-
-  INTERVAL_SECONDS: {INTERVAL_SECONDS}
