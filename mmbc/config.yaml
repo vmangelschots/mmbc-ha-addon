@@ -20,6 +20,10 @@ options:
   BATTERY_2_ADDRESS: 1
   BATTERY_2_PORT: 502
 
+  BATTERY_3_IP: ""
+  BATTERY_3_ADDRESS: 1
+  BATTERY_3_PORT: 502
+
   MQTT_HOST: "localhost"
   MQTT_PORT: 1883
   MQTT_TOPIC_PREFIX: "mmbc/virtual"
