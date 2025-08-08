@@ -1,5 +1,5 @@
 name: MMBC Battery Controller
-version: "0.3.1"
+version: "0.4.3"
 slug: mmbc
 description: Multiple Marstek Battery Controller for Home Assistant
 startup: services
