@@ -6,7 +6,7 @@
     {
       "slug": "mmbc",
       "name": "MMBC Battery Controller",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "MMultiple Marstek Battery Controller for Home Assistant",
       "url": "https://github.com/vmangelschots/mmbc-ha-addon/tree/main/mmbc"
     }
