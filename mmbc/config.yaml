@@ -30,13 +30,16 @@ options:
   INTERVAL_SECONDS: 3
 
 schema:
-  P1_HOST: str
+  P1_HOST: str?
   BATTERY_1_IP: str
   BATTERY_1_ADDRESS: int
   BATTERY_1_PORT: int
   BATTERY_2_IP: str?
   BATTERY_2_ADDRESS: int?
   BATTERY_2_PORT: int?
+  BATTERY_3_IP: str?
+  BATTERY_3_ADDRESS: int?
+  BATTERY_3_PORT: int?
   MQTT_HOST: str?
   MQTT_PORT: int?
   MQTT_TOPIC_PREFIX: str?
